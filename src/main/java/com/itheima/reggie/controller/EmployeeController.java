@@ -45,8 +45,10 @@ public class EmployeeController {
         if(emp == null){
             return R.error("登录失败");
         }
-          
-          
+
+
+
+
         //4、密码比对，如果不一致则返回登录失败结果
         if(!emp.getPassword().equals(password)){
             return R.error("登录失败");
